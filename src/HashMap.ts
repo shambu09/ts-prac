@@ -25,7 +25,7 @@ export class HashMap<V> implements IMap<V> {
     #numBuckets: number;
 
     constructor() {
-        this.#buckets = [null];
+        this.#buckets = [];
         this.#size = 0;
         this.#numBuckets = 10;
 
