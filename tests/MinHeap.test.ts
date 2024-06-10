@@ -1,4 +1,3 @@
-// MinHeap.test.ts
 import { MinHeap } from "../src/MinHeap";
 
 describe("MinHeap", () => {
@@ -81,7 +80,7 @@ describe("MinHeap", () => {
                 sortedElements.push(value);
             }
         }
-        console.log(sortedElements);
+
         expect(sortedElements).toEqual([1, 2, 4, 5, 7, 9, 10]);
     });
 });
