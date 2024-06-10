@@ -9,13 +9,13 @@
 
 import { computeHash } from "./Hash";
 import { createNode, INode } from "./LinkedList";
+import { IMap, TKey } from "./Map";
 
 interface KeyValuePair<K, V> {
     key: K;
     value: V;
 }
 
-type TKey = string | number;
 type TBucket<V> = INode<KeyValuePair<TKey, V>>;
 
 export class HashMap<V> implements IMap<V> {

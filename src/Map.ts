@@ -1,6 +1,6 @@
-type TKey = string | number;
+export type TKey = string | number;
 
-interface IMap<V> {
+export interface IMap<V> {
     get: (key: TKey) => V | undefined;
     put: (key: TKey, value: V) => void;
     remove: (key: TKey) => void;
