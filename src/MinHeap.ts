@@ -1,3 +1,11 @@
+/*
+    MinHeap
+
+    Idea:
+    Binary tree where all the child nodes are greater than the parent node in value
+
+*/
+
 export class MinHeap<T = number> {
     #heap: T[];
     length: number;
